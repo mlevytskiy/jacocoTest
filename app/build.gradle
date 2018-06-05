@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion = 27
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+}
+
+dependencies {
+    implementation project(':extensions')
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41'
+}
+
+apply plugin: 'jacoco'
