@@ -12,6 +12,8 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+
+    buildTypes.debug.testCoverageEnabled = true
 }
 
 dependencies {
