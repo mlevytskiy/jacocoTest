@@ -1,6 +1,8 @@
 package com.dpanchyshyn.main
 
-class Main(private val testValue: TestInterface) {
+class Main() {
 
-    fun readDefaultString() = testValue.returnString()
+    fun readDefaultString(): String {
+        return "test";
+    }
 }

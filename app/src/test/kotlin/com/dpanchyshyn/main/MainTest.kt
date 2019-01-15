@@ -1,7 +1,6 @@
 package com.dpanchyshyn.main
 
-import com.dpanchyshyn.extensions.inferNoOp
-import org.junit.Assert.assertNull
+import org.junit.Assert.assertNotNull
 import org.junit.Test
 
 class MainTest {
@@ -11,10 +10,9 @@ class MainTest {
 //        override fun returnString() = null as String?
 //    })
 
-    private val mainObject = Main(inferNoOp())
-
     @Test
-    fun readsDefaultValueOfStringAsNull() {
-        assertNull(mainObject.readDefaultString())
+    fun readsDefaultValueOfStringAsNullTest() {
+        val mainObject = Main()
+        assertNotNull(mainObject.readDefaultString())
     }
 }
