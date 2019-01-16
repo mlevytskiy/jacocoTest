@@ -2,7 +2,7 @@ package com.dpanchyshyn.main
 
 class Main() {
 
-    fun readDefaultString(): String {
-        return "test";
+    fun readDefaultString(a: String): String {
+        return a + "test";
     }
 }

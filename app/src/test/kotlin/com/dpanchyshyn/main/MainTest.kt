@@ -1,6 +1,6 @@
 package com.dpanchyshyn.main
 
-import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class MainTest {
@@ -13,6 +13,6 @@ class MainTest {
     @Test
     fun readsDefaultValueOfStringAsNullTest() {
         val mainObject = Main()
-        assertNotNull(mainObject.readDefaultString())
+        assertEquals("test", mainObject.readDefaultString(""))
     }
 }
